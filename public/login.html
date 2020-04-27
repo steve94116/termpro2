@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+    <title>Login Page</title>
+  </head>
+
+
+  <body onload ="hideAlert()">
+    <script>
+      function hideAlert() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const myParam = urlParams.get('error');
+          if(myParam == "Incorrect_Credential") {
+            alert("UserName Or Password Incorrect")
+          }
+      }
+  </script>
+
+
+    <form action = "dbtest/login" method="POST"
+    enctype="x-www-form-urlencoded" id="login_form">
+      <h1>User Login</h1>
+      <div class="loginForm">
+
+      <label for="uName">User Name:</label><br>
+      <input type="text" id="username" name="username" style="width: 300px;" ><br>
+<br>
+      <label for="pWord">Password:</label><br>
+      <input type="password" id="password" name="password" style="width: 300px;" >
+      <br><br>
+</div>
+</div>
+<br>
+<div class="subButton">
+        <button type="submit" class="registerbtn">Log In</button>      
+</div>
+
+
+
+    </form>
+
+    <div class="navLinks">
+      <a href="/index.html">Home</a> 
+      <a href="/registration">Create an Account</a>
+      <a href="/userLogin">Login</a>
+      <a href="/searchView">Search</a>
+      <a href="/imagePage">Upload Image</a>
+      <a href="/imageView">Images</a>
+      </div>
+
+  </body>
+
+</html>

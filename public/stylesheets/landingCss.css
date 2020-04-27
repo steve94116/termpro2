@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+
+height: 100%;
+  width: 100%;
+  background: rgb(31,95,97);
+  background: linear-gradient(135deg, rgba(31,95,97,1) 0%,
+   rgba(11,129,133,1) 44%, rgba(159,221,233,1) 100%);
+}
+
+/*form {
+background-color: #6b949e;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid grey;
+  border-width: 4px;
+  border-radius: 10px;
+  border-color: #0f434f;
+}*/
+
+h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0px;
+  color: #07123a;
+  font: 30px Open Sans, sans-serif;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0px;
+  color: #003F11;
+  font: 15px Open Sans, sans-serif;
+}
+
+a {
+width: 100%;
+color: rgb(189, 196, 190);
+}
+
+.divtext{
+    width: 100%;
+  text-align: left;
+}
+
+.subButton {
+  padding-top: 0px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.registerbtn {
+  background-color: #447784;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #255c69;
+  color: #07123a;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+
+.landingpage {
+  font: 15px Open Sans, sans-serif, #000000;
+  text-align: center;
+  width: 100%;
+  background-color: #012B35;
+  height: 200px;
+  }
+
+.homeLogin{
+  font: 8px Open Sans, sans-serif, #000000;
+  padding-top: 0px;
+  text-align: right;
+}

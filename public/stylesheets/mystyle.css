@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+}
+
+body {
+padding-top: 85px;
+  width: 100%;
+  background: rgb(31,95,97);
+  background: linear-gradient(135deg, rgba(31,95,97,1) 0%,
+   rgba(11,129,133,1) 44%, rgba(159,221,233,1) 100%);
+}
+
+form {
+background-color: #6b949e;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  border-width: 4px;
+  border-radius: 10px;
+  border-color: #0f434f;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 45px;
+  color: #07123a;
+  font: 30px Open Sans, sans-serif;
+}
+
+p {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  color: #003F11;
+  font: 15px Open Sans, sans-serif;
+}
+
+a {
+color: #003F11;
+}
+
+.registrationform {
+  padding-top: 30px;
+  width: 300px;
+  margin: 0 auto;
+  color: #172557;
+  font: 15px Open Sans, sans-serif;
+}
+
+.divtext{
+  text-align: left;
+}
+
+.subButton {
+  padding-top: 15px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.registerbtn {
+  background-color: #447784;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #255c69;
+  color: #07123a;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.loginForm {
+  padding-top: 30px;
+  width: 300px;
+  margin: 0 auto;
+  color: #172557;
+  font: 15px Open Sans, sans-serif;
+}
+
+.imageForm {
+  padding-top: 30px;
+  width: 300px;
+  margin: 0 auto;
+  color: #172557;
+  font: 15px Open Sans, sans-serif;
+}
+
+.landingpage {
+  font: 15px Open Sans, sans-serif, #000000;
+  background-color: #012B35;
+  height: 500px;
+  }
+
+.homepage{
+  font: 15px Open Sans, sans-serif, #000000;
+  padding-top: 200px;
+    text-align: left;
+    border: 1px solid grey;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #0f434f;
+  }
+
+  .navLinks {
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+
+  }

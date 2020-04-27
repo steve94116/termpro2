@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mystyle.css">
+    <title>Registration Page</title>
+  </head>
+
+
+  <body onload="showRegistrationAlert()">
+
+    <script type="text/javascript">
+    function showRegistrationAlert() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const myParam = urlParams.get('error');
+          if(myParam == "Incorrect_User") {
+            alert("Username or Email already exists")
+          }
+      }
+
+      function validate() {
+          var password = document.getElementById("password").value;
+          var confirmPassword = document.getElementById("password-repeat").value;
+          if (password != confirmPassword) {
+              alert("Passwords do not match.v");
+              return false;
+          }
+          if (!document.getElementById("tos").checked || !document.getElementById("age").checked)  {
+            alert("You didn't check it! Let me check it for you.");
+          }      
+          return true;
+      }
+    </script>
+
+
+
+    <form action = "dbtest/createUser" method="POST"
+      enctype="x-www-form-urlencoded">
+
+      <h1>Register your account</h1>
+
+        <p>Complete this form to create an account.</p>
+
+
+      <div class="registrationform">
+
+        <div class="divtext">
+
+        <label for="uName">Username</label><br>
+        <input type="text" name="username" style="width: 300px;" required>
+
+        <br><br>
+
+        <label for="email">Email</label><br>
+        <input type="text"  name="email" style="width: 300px;" required>
+        <br><br>
+
+        <label for="psw">Password</label><br>
+        <input type="password"  name="password" id="password" style="width: 300px;" required>
+        <br><br>
+
+        <label for="psw-repeat">Repeat Password</label><br>
+        <input type="password"  name="password-repeat"  id="password-repeat" style="width: 300px;" required>
+        <br><br><br>
+
+        <input type="radio" id="tos" name="gender" value="male" required>
+        <label for="tos">Click here to agree to our <a href="#">Terms & Policy
+        </a>.</label>
+        <br>
+
+        <input type="radio" id="age" name="age" required>
+        <label for="age">I agree I am over the age of 13</label>
+        <br><br>
+        </div>
+
+    </div>
+
+
+      <div class="subButton">
+              <button type="submit" class="registerbtn" onclick="return validate()">Register</button>
+
+      </div>
+    </form>
+
+    <div class="navLinks">
+      <a href="/index.html">Home</a> 
+      <a href="/registration">Create an Account</a>
+      <a href="/userLogin">Login</a>
+      <a href="/searchView">Search</a>
+      <a href="/imagePage">Upload Image</a>
+      <a href="/imageView">Images</a>
+      </div>
+
+  </body>
+</html>
